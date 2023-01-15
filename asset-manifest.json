@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ecourt_project/static/css/main.149b5bf9.css",
+    "main.js": "/ecourt_project/static/js/main.54ec4a45.js",
+    "static/js/787.994511a4.chunk.js": "/ecourt_project/static/js/787.994511a4.chunk.js",
+    "static/media/pic2.jpeg": "/ecourt_project/static/media/pic2.73ad2560172a46abd568.jpeg",
+    "index.html": "/ecourt_project/index.html",
+    "main.149b5bf9.css.map": "/ecourt_project/static/css/main.149b5bf9.css.map",
+    "main.54ec4a45.js.map": "/ecourt_project/static/js/main.54ec4a45.js.map",
+    "787.994511a4.chunk.js.map": "/ecourt_project/static/js/787.994511a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.149b5bf9.css",
+    "static/js/main.54ec4a45.js"
+  ]
+}
