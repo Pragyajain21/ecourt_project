@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import CustomSelect from "./Component/CustomSelect";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  state = {
+    country: "",
+  };
+  handleCustomSelect = (country) => {
+    this.setState({ country });
+  };
+
+  render() {
+    const { country } = this.state;
+    return (
+      <div>
+        <CustomSelect
+          data={[
+            { value: 1, lable: "India" },
+            { value: 2, lable: "China" },
+            { value: 3, lable: "UK" },
+            { value: 4, lable: "USA" },
+            { value: 5, lable: "Russia" },
+            { value: 6, lable: "Nepal" },
+          ]}
+          value={country}
+          placeholder="select Country"
+          onChange={this.handleCustomSelect}
+        />
+      </div>
+    );
+  }
 }
-
-export default App;
+App.propTypes = {
+  value: PropTypes.string,
+  data: PropTypes.array.isRequired,
+  styleClass: PropTypes.string,
+};
