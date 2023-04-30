@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import CustomSelect from "./Component/CustomSelect";
+import countrydata from "./Component/countrydata.json";
 
 export default class App extends Component {
   state = {
@@ -15,14 +16,7 @@ export default class App extends Component {
     return (
       <div>
         <CustomSelect
-          data={[
-            { value: 1, lable: "India" },
-            { value: 2, lable: "China" },
-            { value: 3, lable: "UK" },
-            { value: 4, lable: "USA" },
-            { value: 5, lable: "Russia" },
-            { value: 6, lable: "Nepal" },
-          ]}
+          data={countrydata}
           value={country}
           placeholder="select Country"
           onChange={this.handleCustomSelect}
